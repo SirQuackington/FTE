@@ -1,0 +1,88 @@
+.slide:hover,
+.slide:focus {
+  box-shadow: 
+    inset -94vw 0 0 0 var(--hover),
+    inset 94vw 0 0 0 var(--hover);  
+}
+
+body {
+    background-image: url("https://codehs.com/uploads/a55cba9d6d47d97efc7127c854efb218");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font: 300 1em "Fira Sans", sans-serif;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+    text-align: center;
+    max-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+}
+
+button {
+  background: none;
+  border: 4px solid;
+  font-size: 1.8rem;
+  font: inherit;
+  line-height: 1.5;
+  margin: 3vw;
+  padding: 2vw 4vw;
+  width: 94vw;
+}
+
+ 
+.slide {
+  --hover: rgb(156, 156, 156, .5);
+  --color: #000000;
+}
+
+
+button {
+  color: var(--color);
+  transition: 0.78s;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    }
+                
+            /*Move button*/
+#moveBtn {
+    border-radius: 3vw;
+    position: fixed;
+    align-items: stretch;
+    width: 100%;
+    z-index: 99;
+    bottom: -3vw;
+    left: -3vw;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+    padding: 1.3vw;
+    transition: top 0.3s ease, bottom 0.3s ease;
+    }
+    
+#moveBtn:hover {
+    background-color: rgba(0,0,0,0.7);
+    padding: 1.7vw;
+    border-radius: 3vw;
+}
+                
+#indicator {
+    position: fixed;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 1vw;
+    display: none;
+}
